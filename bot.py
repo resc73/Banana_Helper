@@ -119,9 +119,11 @@ async def sid(interaction: discord.Interaction, id: int):
             eeds1.append(s[0])
         print(eeds1)
         if str(interaction.user.id) not in eeds1:
-            cursor.execute('INSERT INTO id (discordid, steamid) VALUES(?, ?)', (interaction.user.id, id))
+            cursor.execute('INSERT INTO id (discordid, steamid) VALUES(?, ?)',
+                           (interaction.user.id, id))
             print('created')
-        cursor.execute('UPDATE id SET steamid = ? WHERE discordid = ?', (id, interaction.user.id))
+        cursor.execute('UPDATE id SET steamid = ? WHERE discordid = ?',
+                       (id, interaction.user.id))
         print(eeds, id, interaction.user.id)
         connection.commit()
         connection.close()

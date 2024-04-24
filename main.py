@@ -1,11 +1,8 @@
 import dota2api
 import discord
 import sqlite3
-from pprint import pprint
-from flask import flash
 import json
 import requests
-import random
 from PIL import Image, ImageDraw, ImageFont
 from numdeclination import NumDeclination
 
