@@ -182,7 +182,7 @@ def get_id(interaction: discord.Interaction):
     return aboba
 
 
-TOKEN = "MTIxMzU0ODE0MjczNDM1MjQ5NA.GTLZ8Q.IGYJv6uZxFj8o8v0g-g0dAOn_-oDPqU_zLuXks"
+TOKEN = "MTIxMzU0ODE0MjczNDM1MjQ5NA.G-HBEf.ptC0tByt7UTqznlwYpQ6yicsZWD3fdmtu64CC8"
 
 bot.run(TOKEN)
 
